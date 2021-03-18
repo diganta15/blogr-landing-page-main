@@ -1,155 +1,223 @@
-*{
-    
-    margin: 0px;
+* {
+  margin: 0px;
 }
 /**Styling the header**/
-header{
-   background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    
-    position: relative;
+header {
+  background-image: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+
+  position: relative;
+  border-bottom-left-radius: 110px;
 }
-#main{
-   
-      
-     background-image: url('/images/bg-pattern-intro.svg');
-    background-repeat: no-repeat;
-    background-position:  30% 50%;
-    background-size: 200rem;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 800;
-    font-family: 'Overpass',sans-serif;
+#main {
+  background-image: url("/images/bg-pattern-intro.svg");
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  background-size: 200rem;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 800;
+  font-family: "Overpass", sans-serif;
 }
-.top{
-    
-    display: flex;
-    justify-content: space-between;
-     align-items: flex-start;
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.header-left{
-    display: flex;
-    margin-left: 200px;
-    justify-content: space-between;
+.header-left {
+  display: flex;
+  margin-left: 200px;
+  justify-content: space-between;
 }
-.logo{
-    margin-top: 30px;
-    object-fit: contain;
+.logo {
+  margin-top: 30px;
+  object-fit: contain;
 }
 
-.links{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 35px;
-    padding-left: 40px;
-    font-size: 16px;
-    color: #fff;
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 35px;
+  padding-left: 40px;
+  font-size: 16px;
+  color: #fff;
 }
 .links > * {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.links>p{
-    padding-left: 10px;
-     cursor: pointer;
+.links > p {
+  padding-left: 10px;
+  cursor: pointer;
 }
-.link{
-    display: none;
-    background-color: #fff;
-    padding-left: 10px;
-    padding-right: 30px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-top: 20px;
-    border-radius: 8px;
-    
+.link {
+  display: none;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 20px;
+  border-radius: 8px;
 }
-.hover:hover{
-   cursor: pointer;
+.hover:hover {
+  cursor: pointer;
 }
-.link > li{
-    list-style: none;
-    
+.link > li {
+  list-style: none;
 }
 
-.header-right{
-    display: flex;
-    margin-right: 160px;
-    margin-top: 20px;
+.header-right {
+  display: flex;
+  margin-right: 160px;
+  margin-top: 20px;
 }
-.btn{
-    cursor: pointer;
-    background: transparent; 
-    border: none;
-    outline: none;
-    font-family: 'Ubuntu',sans-serif;
-    font-weight: 700;
-    margin-right: 20px;
-    font-size: 16px;
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  margin-right: 20px;
+  font-size: 16px;
 }
-.btn-signup{
-    background: #fff;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 26px;
-    color: hsl(356, 100%, 66%); 
+.btn-signup {
+  background: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 26px;
+  color: hsl(356, 100%, 66%);
+}
+.btn-signup:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: #fff;
 }
 
 /**Banner**/
-.title{
-    text-align: center;
-    padding-top: 120px;
-    font-size: 4em;
+.title {
+  text-align: center;
+  padding-top: 120px;
+  font-size: 4em;
+  color: #fff;
+}
+.sub-title {
+  text-align: center;
+  font-weight: 400;
     color: #fff;
+  padding-top: 30px;
 }
-.sub-title{
-    text-align: center;
-    font-weight: 400;
-    color:#fff;
-    padding-top: 30px;
-}
-.buttons{
-    text-align: center;
-    margin-top: 30px;
+.buttons {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .buttons > button {
-    margin: 10px;
-    outline: none;
-    border-radius: 28px;
-    font-family: 'Ubuntu',serif;
-    font-weight: 800;
-    cursor: pointer;
+  margin: 10px;
+  outline: none;
+  border-radius: 28px;
+  font-family: "Ubuntu", serif;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 120px;
 }
 
-.btn-free{
-     border: transparent;
-    background: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: hsl(356, 100%, 66%);
+.btn-free {
+  border: transparent;
+  background: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: hsl(356, 100%, 66%);
 }
-.btn-learn{
-   background:  hsl(356, 100%, 66%);
-   border: #fff 1px solid;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #fff ;
+.btn-learn {
+  background: hsl(356, 100%, 66%);
+  border: #fff 1px solid;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
 }
-.btn-free:hover{
-    background-color: hsl(355, 100%, 74%);
-    color: #fff;
+.btn-free:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: #fff;
 }
-.btn-learn:hover{
-    background-color: #fff;
-    color: hsl(356, 100%, 66%);
+.btn-learn:hover {
+  background-color: #fff;
+  color: hsl(356, 100%, 66%);
 }
 
+/**Showcase Top**/
+.showcase-top {
+  margin-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 260px;
+    background-image: url("/images/illustration-editor-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 110% 0%;
+  background-size: 800px;
+  
+}
+.showcase-top .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10em;
 
 
+}
+.showcase-top .grid-left {
+  margin-top: 80px;
+}
+/**Showcase Mid**/
+.showcase-mid{
+    z-index: 0;
+    background-color: blueviolet;
+   bottom: 0;
+    height: 100px;
+   
+}
+#grid2{
+    z-index: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 10em;
+    margin-right: 10em;
+    
+}
+.grid2-right{
+    margin-top: 11em;
+    margin-left: 30px;
+}
+/**Text**/
+.text-centre {
+  text-align: center;
+}
+.text-primary {
+  font-family: "Ubuntu", serif;
+  font-size: 2.4em;
+  font-weight: 500;
+  color: hsl(208, 49%, 24%);
+}
+.text-secondary {
+  font-size: 1.6em;
+  font-family: "Ubuntu", serif;
+  color: hsl(208, 49%, 24%);
+  font-weight: 400;
+  margin-top: 20px;
+}
+.text-normal {
+  margin-top: 36px;
+  font-family: "Overpass", serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: hsl(207, 13%, 34%);
+}

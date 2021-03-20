@@ -216,6 +216,25 @@ header {
     margin-top: 11em;
     margin-left: 30px;
 }
+
+.showcase-bottom-desktop{
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid3-left{
+  background-image: url('/images/illustration-laptop-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: 210% 0%;
+  height: 800px;
+  width: 100%;
+}
+.grid3-right{
+  margin-top: 12em;
+}
+
+
+
 /**Text**/
 .text-centre {
   text-align: center;
@@ -241,4 +260,20 @@ header {
   color: hsl(207, 13%, 34%);
   padding-right: 90px;
   line-height: 30px;
+}
+.text-mid-primary{
+  margin-left: 30px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Overpass',serif;
+}
+.text-mid-normal{
+  margin-top: 20px;
+  margin-left: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-family: 'Ubuntu',serif;
+  color: #fff;
+  margin-right: 130px;
 }

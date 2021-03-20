@@ -233,6 +233,36 @@ header {
   margin-top: 12em;
 }
 
+/*Footer*/
+footer{
+  background-color: hsl(240, 10%, 16%);
+  height: 450px;
+  border-top-right-radius: 100px;
+}
+.footer{
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
+}
+
+.footer-ul>p{
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Overpass',sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.footer-links{
+  color: hsl(240, 2%, 79%);
+  list-style: none; 
+  font-family: 'Overpass',sans-serif;
+  margin-top: 14px; 
+}
+
+
 
 
 /**Text**/

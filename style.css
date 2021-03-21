@@ -28,6 +28,9 @@ header {
   justify-content: space-between;
   align-items: flex-start;
 }
+.mobile-menue{
+  display: none;
+}
 .header-left {
   display: flex;
   margin-left: 200px;
@@ -63,6 +66,7 @@ header {
   padding-bottom: 6px;
   margin-top: 20px;
   border-radius: 8px;
+  color: black;
 }
 .hover:hover {
   cursor: pointer;
@@ -307,3 +311,42 @@ footer{
   color: #fff;
   margin-right: 130px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  header{
+    border-bottom-left-radius: 100px;
+  }
+  #main{
+    background-size: 800px;
+  }
+  .top{
+    background-image: url('/images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    cursor: pointer;
+  }
+  
+  .header-left{
+    margin-left: 10px;
+  }
+  .links{
+   display: none;
+  }
+  .header-right{
+    display: none;
+  }
+  .mobile-menue{
+    display: flex;
+    z-index: 2;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+
+}
+

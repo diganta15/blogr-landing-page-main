@@ -347,6 +347,29 @@ footer{
     font-size: 30px;
   }
 
+  .showcase-top{
+   background-position: -120% 20%;
+   background-size: 400px;
+   /* height: 1030px; */
+   margin: 0px;
+  }
+
+  .showcase-top .grid{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 18rem;
+    text-align: center; 
+  }
+
+  .text-secondary{
+    font-weight: 300;
+    padding: 20px;
+  }
+  .text-normal{
+    margin: 0px;
+    padding: 0px;
+  }
 
 }
 

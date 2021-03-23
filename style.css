@@ -40,7 +40,9 @@ header {
   margin-top: 30px;
   object-fit: contain;
 }
-
+.hamburger{
+  display: none;
+}
 .links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -310,32 +312,53 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  
   header {
     border-bottom-left-radius: 100px;
   }
   #main {
     background-size: 800px;
+    margin-top: 0px;
+    padding-top: 0px;
+    z-index: 1;
+   
   }
   .top {
-    background-image: url("/images/icon-hamburger.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 70%;
-    cursor: pointer;
+   
   }
-
+  
   .header-left {
     margin-left: 10px;
+    
   }
+  /**/
+  .header-left .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hamburger{
+    margin-top: 30px;
+    margin-left: 180px;
+    display: block;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  /**/
   .links {
     display: none;
   }
   .header-right {
     display: none;
   }
+  /**/
   .mobile-menue {
-    display: flex;
+    display: block;
+    z-index: 1;
+    position: relative;
     z-index: 2;
   }
+  /**/
 
   .title {
     font-size: 30px;
@@ -381,7 +404,7 @@ footer {
     margin-top: 0px;
     top: 0;
     height: auto;
-    width: 400px;
+    width: 340px;
     margin-bottom: 0px;
   }
   #grid2 .grid2-right {

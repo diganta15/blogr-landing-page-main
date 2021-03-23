@@ -44,6 +44,8 @@ header {
 .links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 0px;
   margin-top: 35px;
   padding-left: 40px;
   font-size: 16px;
@@ -56,17 +58,23 @@ header {
 .links > p {
   padding-left: 10px;
   cursor: pointer;
+  padding-right: 50px;
+  
 }
 .link {
-  display: none;
+  visibility: hidden;
   background-color: #fff;
   padding-left: 10px;
   padding-right: 30px;
   padding-top: 6px;
   padding-bottom: 6px;
   margin-top: 20px;
+  margin-right: 0px;
   border-radius: 8px;
   color: black;
+}
+.show{
+  visibility: visible;
 }
 .hover:hover {
   cursor: pointer;
@@ -214,7 +222,7 @@ header {
   margin-left: 30px;
 }
 
-.showcase-bottom{
+.showcase-bottom {
   margin-top: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -334,7 +342,7 @@ footer {
   }
 
   .showcase-top {
-     background-image: url("/images/illustration-editor-mobile.svg");
+    background-image: url("/images/illustration-editor-mobile.svg");
     background-position: 50% 20%;
     background-size: 400px;
     /* height: 1030px; */
@@ -369,58 +377,57 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
   }
-  #grid2 .grid2-left img{
+  #grid2 .grid2-left img {
     margin-top: 0px;
     top: 0;
     height: auto;
     width: 400px;
     margin-bottom: 0px;
   }
-  #grid2 .grid2-right{
+  #grid2 .grid2-right {
     margin-top: 0px;
     margin-left: 0px;
   }
 
-  .showcase-bottom{
+  .showcase-bottom {
     display: flex;
     flex-direction: column;
   }
-  .grid3-left{
+  .grid3-left {
     margin-top: 200px;
-    background-image: url('/images/illustration-laptop-mobile.svg');
+    background-image: url("/images/illustration-laptop-mobile.svg");
     height: 400px;
     background-position: center;
   }
-  .grid3-right{
+  .grid3-right {
     margin-top: 10px;
     text-align: center;
   }
 
-  footer{
+  footer {
     height: 800px;
-   
   }
-  .footer{
+  .footer {
     display: block;
-     margin-left: 0px;
-     margin-right: 0px;
-     padding: 0px;
-     text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    text-align: center;
   }
-  .footer> *{
-    margin:0px;
+  .footer > * {
+    margin: 0px;
   }
-  .footer> img{
+  .footer > img {
     padding-top: 20px;
   }
-  .footer-ul{
+  .footer-ul {
     margin: 0px;
     padding: 0px;
   }
-  .footer-ul> p{
+  .footer-ul > p {
     margin-top: 40px;
   }
-  .footer-links{
+  .footer-links {
     padding-top: 1px;
   }
 
@@ -432,11 +439,11 @@ footer {
     margin: 0px;
     padding: 0px;
   }
-  .text-mid-primary{
+  .text-mid-primary {
     margin: 0px;
     text-align: center;
   }
-  .text-mid-normal{
+  .text-mid-normal {
     margin: 0px;
     padding: 10px;
     text-align: center;
